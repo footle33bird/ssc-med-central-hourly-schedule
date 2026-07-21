@@ -467,15 +467,15 @@ body::after {
   </div>
 
   <div class="tabs step-anim" id="tabs">
-    <button class="tab active" data-pane="main">Shift Message</button>
+    <button class="tab active" data-pane="template">Template</button>
+    <button class="tab" data-pane="main">Shift Message</button>
     <button class="tab" data-pane="hourly">Hourly Breakdown</button>
-    <button class="tab" data-pane="template">Template</button>
   </div>
 
   <div class="error" id="error"></div>
   <div class="waiting" id="waiting">✦ Upload both files to generate the messages</div>
 
-  <div class="pane" id="pane-template">
+  <div class="pane active" id="pane-template">
     <div class="glass-card tpl-card">
       <div class="tpl-field">
         <label class="tpl-label" for="tplOpening">Opening line</label>
@@ -507,7 +507,7 @@ body::after {
       </div>
     </div>
 
-    <div class="pane active" id="pane-main">
+    <div class="pane" id="pane-main">
       <div class="toolbar">
         <span class="count" id="mainCount"></span>
         <div class="tzbar">
